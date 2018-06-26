@@ -26,6 +26,40 @@ end
    return new_string + old_string
  end
 
-def add_string_as_number(int_as_string_1, int_as_string_2)
-  return x.to_i + y.to_i 
+def add_string_as_number(x,y)
+  return x.to_i + y.to_i
+end
+
+def number_to_full_month_name(month_as_number)
+  case month_as_number
+  when 1
+    p "January"
+  when 3
+    p 'March'
+  when 9
+    p "September"
+  end
+end
+
+def number_to_short_month_name(month_as_number)
+  case month_as_number
+  when 1
+    p "Jan"
+  when 4
+    p "Apr"
+  when 10
+    p "Oct"
+  end
+end
+
+def volume_of_cube(x)
+return (x**3)
+end
+
+def volume_of_sphere (x)
+  return (4/3*[3.14*(x)]**3)
+end
+
+def fahrenheit_to_celsius
+  return ((x)32*0.55)
 end
